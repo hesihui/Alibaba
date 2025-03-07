@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: 90e818eec4ab659469951aaba05c7ad8
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: mrtrainmanbackup(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MrTrainMan
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.0000007132084, y: 6.8240714, z: 3.542192}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalRightGear.001
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -2.007156, y: 2.9744296, z: 2.3987308}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalRightGear.002
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -2.007156, y: 2.9744298, z: 0.13195021}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalRightGear.003
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -2.007156, y: 2.9744298, z: -2.1977205}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalRightGear.004
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -2.007156, y: 2.9744296, z: -4.5209594}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.003
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.422869, y: 1.0640972, z: 5.1626654}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.005
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.422869, y: 1.0640973, z: 2.7914326}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.422869, y: 1.0640972, z: 0.43979686}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.007
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.422869, y: 1.0640973, z: -2.2057931}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.009
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.422869, y: 1.0640972, z: -4.8905773}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalLeftGear.004
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 2.007156, y: 2.9744296, z: -4.5209594}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalLeftGear.003
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 2.007156, y: 2.9744298, z: -2.1977205}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalLeftGear.002
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 2.007156, y: 2.9744298, z: 0.13195021}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalLeftGear.001
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 2.007156, y: 2.9744296, z: 2.3987308}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalLeftGear
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 2.007156, y: 2.9744296, z: 4.6049724}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.008
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.422869, y: 1.0640972, z: -4.8905773}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.006
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.422869, y: 1.0640973, z: -2.2057931}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.004
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.422869, y: 1.0640972, z: 0.43979686}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.002
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.422869, y: 1.0640973, z: 2.7914326}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BottomGear.001
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.422869, y: 1.0640972, z: 5.1626654}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VerticalRightGear
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -2.007156, y: 2.9744296, z: 4.5578547}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftEye
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.3598166, y: 7.3865447, z: 6.512291}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightEye
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.3598166, y: 7.3865447, z: 6.512291}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tube1
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.0000000024214386, y: 7.76915, z: 1.0548273}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tube2
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.0000000069849193, y: 8.428097, z: -1.44919}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tube3
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -0.0000000045634807, y: 9.838911, z: -4.212159}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftEyeRing1
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.4817121, y: 7.486246, z: 5.9498544}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftEyeRing2
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.5082814, y: 7.5853434, z: 5.4723597}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftEyeRing3
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.5483867, y: 7.5053296, z: 4.973408}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightEyeRing1
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.4817121, y: 7.486246, z: 5.9498544}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightEyeRing2
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.5082814, y: 7.5853434, z: 5.4723597}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightEyeRing3
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.5483867, y: 7.5053296, z: 4.973408}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.001
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -0.5492928, y: 3.8027306, z: 5.792578}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.002
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.1538032, y: 3.8027306, z: 5.779147}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.003
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -0.84939444, y: 3.2559764, z: 5.7695575}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.004
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.4510336, y: 3.256516, z: 5.7829437}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.005
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.146625, y: 2.7103012, z: 5.78674}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.006
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -0.54785717, y: 2.7103012, z: 5.78674}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.007
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -0.84508747, y: 2.1640863, z: 5.790537}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.008
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -1.4409841, y: 2.1640863, z: 5.7905374}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.009
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.5492928, y: 3.8027306, z: 5.779147}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.010
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.1538032, y: 3.8027306, z: 5.779147}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.011
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.4510336, y: 3.256516, z: 5.7829437}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.012
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.84939444, y: 3.256516, z: 5.7829437}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.013
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.146625, y: 2.7103012, z: 5.78674}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.014
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.54785717, y: 2.7103012, z: 5.78674}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.015
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 1.4409841, y: 2.1640863, z: 5.7905374}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.84508747, y: 2.1640863, z: 5.790537}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.00000071525574, y: 6.8240714, z: 3.5421922}
+      rotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm.001
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 0.00000071525574, y: 6.8240714, z: 3.5421922}
+      rotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArmBone
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: -3.5266292, y: 7.537062, z: 3.0361333}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm.InnerBone
+      parentName: LeftArmBone
+      position: {x: 1.8618116, y: 1.4243968, z: -1.3008403}
+      rotation: {x: 0.6777592, y: -0.6679912, z: -0.20091349, w: 0.23251668}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm.OuterBone
+      parentName: LeftArm.InnerBone
+      position: {x: 0.00000014528632, y: 3.034718, z: 0.00000015646219}
+      rotation: {x: 0.037983127, y: -0.0101157855, z: -0.7075214, w: 0.70559794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArmBone
+      parentName: mrtrainmanbackup(Clone)
+      position: {x: 3.555393, y: 7.5245304, z: 3.04242}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm.InnerBone
+      parentName: RightArmBone
+      position: {x: -1.7070543, y: 1.4306834, z: -1.3229631}
+      rotation: {x: 0.24392124, y: -0.21375608, z: -0.6634843, w: 0.6742399}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm.OuterBone
+      parentName: RightArm.InnerBone
+      position: {x: 0.000000022351742, y: 2.8795886, z: 0.00000012665987}
+      rotation: {x: 0.032023847, y: -8.273882e-10, z: -0.7065873, w: 0.70690095}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: MrTrainMan
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

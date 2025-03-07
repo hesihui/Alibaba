@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cded4c84df10b30439664be6b54a4fa8, type: 3}
+  m_Name: Skull Ring
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 5924615589666146317, guid: f6d9cb14effc9ec42848ea8ecdb457b8, type: 3}
+  ItemCaption: +15 Move Speed
+  Equipment: 
+  ItemLevel: 5
+  Armor: 0
+  AttackSize: 0
+  Damage: 0
+  DamageMultiplier: 0
+  MoveSpeed: 15
+  AttackSpeed: 0
+  ShotSpeed: 0
+  Health: 0
+  MaxHealth: 0
+  Special: 
+  AttackPrefab: {fileID: 0}
+  AttackExplosionPrefab: {fileID: 0}

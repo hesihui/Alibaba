@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cded4c84df10b30439664be6b54a4fa8, type: 3}
+  m_Name: Diamond Cube Staff
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 5905714431540926543, guid: 7a739a5c80e7ecb4cbe2a8ca6f969982, type: 3}
+  ItemCaption: +4 Damage +1 Attack Speed
+  Equipment: DiamondCubeStaff
+  ItemLevel: 10
+  Armor: 0
+  AttackSize: 0
+  Damage: 4
+  DamageMultiplier: 0
+  MoveSpeed: 0
+  AttackSpeed: 1
+  ShotSpeed: 0
+  Health: 0
+  MaxHealth: 0
+  Special: 
+  AttackPrefab: {fileID: 4495217539224112716, guid: 67c5bd62aaa238d4cad39b2d4ac247d4,
+    type: 3}
+  AttackExplosionPrefab: {fileID: 0}

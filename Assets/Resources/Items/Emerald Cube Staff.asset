@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cded4c84df10b30439664be6b54a4fa8, type: 3}
+  m_Name: Emerald Cube Staff
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 4237833269662090823, guid: c125e70dd11939d4d85cebdbc4da0e15, type: 3}
+  ItemCaption: +2 Damage +1 Attack Speed
+  Equipment: EmeraldCubeStaff
+  ItemLevel: 5
+  Armor: 0
+  AttackSize: 0
+  Damage: 2
+  DamageMultiplier: 0
+  MoveSpeed: 0
+  AttackSpeed: 1
+  ShotSpeed: 0
+  Health: 0
+  MaxHealth: 0
+  Special: 
+  AttackPrefab: {fileID: 4495217539224112716, guid: 44f71addaab1e63478f8cc6e8f72ef20,
+    type: 3}
+  AttackExplosionPrefab: {fileID: 0}
