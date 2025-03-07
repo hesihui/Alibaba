@@ -4,3 +4,4 @@ Logs/
 UserSettings/
 Packages/*.lock
 MemoryCaptures/
+.DS_Store
