@@ -124,7 +124,6 @@ public class HeartScript : MonoBehaviour
         Destroy(Player.transform.GetComponent<PlayerMovement>());
         Destroy(Player.transform.GetComponent<PlayerAttack>());
         Destroy(Player.transform.GetComponent<ChangeRooms>());
-        Destroy(Player.transform.GetComponent<BombScript>());
         Destroy(Player.transform.GetComponent<Rigidbody>());
         Destroy(Player.transform.GetComponent<CharacterController>());
         
