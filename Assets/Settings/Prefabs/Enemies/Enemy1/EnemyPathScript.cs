@@ -105,8 +105,8 @@ public class EnemyPathScript : MonoBehaviour
 
   
     bool PathDrawn = false;
-    bool TouchingWall = false;
-    float TouchingWallTimer = 0;
+    //bool TouchingWall = false;
+    //float TouchingWallTimer = 0;
     Vector3 CollisionPoint = Vector3.zero;
 
     Vector3 MoveTowards = Vector3.zero;

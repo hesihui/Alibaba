@@ -19,7 +19,6 @@ public class GenerateLevel : MonoBehaviour
     public Sprite ShopRoom;
     public Sprite TreasureRoom;
     public Sprite UnexploredRoom;
-    public Sprite SecretRoom;
 
     public GameObject DebugCheatMenu;
 
@@ -376,59 +375,6 @@ public class GenerateLevel : MonoBehaviour
 
     }
 
-    private bool GenerateSecretRoom()
-    {
-        List<Room> ShuffledList = new List<Room>(Level.Rooms);
-        ShuffleList(ShuffledList);
-
-        foreach (Room R in ShuffledList)
-        {
-            // x and y < 3 and > -3 starting room is at 0,0
-            if (Mathf.Abs(R.Location.x) > 2 || Mathf.Abs(R.Location.y) > 2 || R.Location == Vector2.zero)
-            {
-                continue;
-            }
-
-            // Define the directions
-            Vector2[] directions = { new Vector2(-1, 0), new Vector2(1, 0), new Vector2(0, 1), new Vector2(0, -1) };
-
-            foreach (Vector2 direction in directions)
-            {
-                Vector2 newLocation = R.Location + direction;
-
-                // Check if a room already exists at the new location
-                if (!Level.Rooms.Exists(x => x.Location == newLocation))
-                {
-                    if (Mathf.Abs(newLocation.x) > 1 || Mathf.Abs(newLocation.y) >1) //Prevents it from being drawn next to the start room.
-                    {
-                        CreateNewRoom(newLocation);
-                        return true;
-                    }
-                }
-            }
-        }
-
-
-        return false;
-    }
-
-
-    //Used for Secret Room
-    void CreateNewRoom(Vector2 location)
-    {
-        Room SR = new Room
-        {
-            Location = location,
-            RoomSprite = Level.SecretRoom,
-            Explored = false,
-            Revealed = false,
-            SpecialRoom = true,
-            RoomNumber = 4
-        };
-
-        DrawRoomOnMap(SR);
-    }
-
     private void Awake()
     {
         Level.DefaultRoomIcon = EmptyRoom;
@@ -437,7 +383,6 @@ public class GenerateLevel : MonoBehaviour
         Level.ShopRoomIcon = ShopRoom;
         Level.TreasureRoomIcon = TreasureRoom;
         Level.UnexploredRoom = UnexploredRoom;
-        Level.SecretRoom = SecretRoom;
     }
 
     int maxtries = 0;
@@ -523,7 +468,6 @@ public class GenerateLevel : MonoBehaviour
 
        bool treasure = GenerateSpecialRoom(Level.TreasureRoomIcon, "ItemRooms");
        bool shop = GenerateSpecialRoom(Level.ShopRoomIcon, "ShopRooms");
-        //bool secret = GenerateSecretRoom();
 
         if (!treasure || !shop)
         {
