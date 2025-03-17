@@ -3,61 +3,90 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    public GameObject dialogPanel; // Bind the dialog panel
-    public Text dialogText; // Bind the dialog text (Legacy UI)
-    public Button option1Button, option2Button, option3Button; // Choice buttons
-    public Text option1Text, option2Text, option3Text; // Text components for buttons
+    public static DialogManager Instance;
+    public GameObject dialogPanel;
+    public Text npcNameText;
+    public Text dialogText;
+    public Button option1Button, option2Button, option3Button;
+    public Text option1Text, option2Text, option3Text;
 
+    private string[] currentDialogLines;
+    private string[][] currentChoices;
+    private string currentNpcName;
     private int dialogIndex = 0;
 
-    // Dialog content
-    private string[] dialogLines = new string[]
+    void Awake()
     {
-        "Hello, traveler!",
-        "This was once a great kingdom, but now it lies in ruins.",
-        "What would you like to do?"
-    };
+        Instance = this;
+        dialogPanel.SetActive(false);
 
-    // Choices for dialog
-    private string[][] choices = new string[][]
-    {
-        new string[] { "Continue the story", "Ask about the quest", "Leave" },
-        new string[] { "Learn more about the kingdom's history", "Ask about the monsters", "End the conversation" }
-    };
-
-    void Start()
-    {
-        dialogPanel.SetActive(false); // Hide the dialog panel at the start
-
-        // Add button click listeners
         option1Button.onClick.AddListener(() => SelectOption(0));
         option2Button.onClick.AddListener(() => SelectOption(1));
         option3Button.onClick.AddListener(() => SelectOption(2));
     }
 
-    public void StartDialog()
+    void Update()
     {
+        if (dialogPanel.activeSelf && Input.GetKeyDown(KeyCode.Space))
+        {
+            NextDialog();
+        }
+    }
+
+    public void StartDialog(string[] dialogLines, string[][] choices, string npcName)
+    {
+        if (dialogLines == null || dialogLines.Length == 0)
+        {
+            Debug.LogError("Can't find the dialogue of " + npcName );
+            return;
+        }
+
+        currentDialogLines = dialogLines;
+        currentChoices = choices;
+        currentNpcName = npcName;
+        dialogIndex = 0;
         dialogPanel.SetActive(true);
 
-        if (dialogIndex < dialogLines.Length)
+        if (npcNameText != null)
         {
-            ShowText(dialogLines[dialogIndex]);
-            dialogIndex++; // 让对话推进
+            npcNameText.text = npcName;
         }
         else
         {
-            ShowChoices(0);
+            Debug.LogWarning("Npc Name Text is not bound.");
+        }
+
+        ShowText(currentDialogLines[dialogIndex]);
+    }
+
+    void NextDialog()
+    {
+        if (dialogIndex < currentDialogLines.Length - 1)
+        {
+            dialogIndex++;
+            ShowText(currentDialogLines[dialogIndex]);
+        }
+        else
+        {
+            ShowChoices();
         }
     }
 
     void ShowText(string text)
     {
-        dialogText.text = text;
-
-        // 如果是最后一条对话，就显示选项按钮
-        if (dialogIndex == dialogLines.Length)
+        if (dialogText != null)
         {
-            ShowChoices(0);
+            dialogText.text = text;
+        }
+        else
+        {
+            Debug.LogWarning("Dialog Text is not bounnd.");
+        }
+
+        // Only display option at the end of lines 
+        if (dialogIndex == currentDialogLines.Length - 1 && currentChoices.Length > 0)
+        {
+            ShowChoices();
         }
         else
         {
@@ -67,39 +96,56 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    void ShowChoices(int choiceIndex)
+    void ShowChoices()
     {
-        option1Button.gameObject.SetActive(true);
-        option2Button.gameObject.SetActive(true);
-        option3Button.gameObject.SetActive(true);
+        if (currentChoices == null || currentChoices.Length == 0)
+        {
+            Debug.LogWarning("This NPC doesn't have options.");
+            return;
+        }
 
-        option1Text.text = choices[choiceIndex][0];
-        option2Text.text = choices[choiceIndex][1];
-        option3Text.text = choices[choiceIndex][2];
+        option1Button.gameObject.SetActive(currentChoices.Length > 0);
+        option2Button.gameObject.SetActive(currentChoices.Length > 1);
+        option3Button.gameObject.SetActive(currentChoices.Length > 2);
+
+        if (currentChoices.Length > 0 && currentChoices[0].Length > 0)
+            option1Text.text = currentChoices[0][0]; 
+        if (currentChoices.Length > 1 && currentChoices[1].Length > 0)
+            option2Text.text = currentChoices[1][0]; 
+        if (currentChoices.Length > 2 && currentChoices[2].Length > 0)
+            option3Text.text = currentChoices[2][0]; 
     }
 
-    void SelectOption(int option)
+void SelectOption(int option)
+{
+    if (dialogIndex == currentDialogLines.Length - 1)
     {
-        if (dialogIndex == dialogLines.Length)
+        if (currentChoices.Length > option && currentChoices[option].Length > 0)
         {
-            switch (option)
+            string selectedOption = currentChoices[option][0];
+
+            Debug.Log("Player selected: " + selectedOption);
+
+            // Close the dialog if the player chooses "Give Up Quest"
+            if (selectedOption.ToLower().Contains("leave"))
             {
-                case 0:
-                    ShowText("This kingdom was once ruled by a mighty king...");
-                    break;
-                case 1:
-                    ShowText("Recently, monsters have been spotted near the castle...");
-                    break;
-                case 2:
-                    CloseDialog();
-                    break;
+                Debug.Log("Closing dialog automatically.");
+                CloseDialog();
+                return;
             }
+
+            // Continue displaying the player's selection
+            ShowText("You selected: " + selectedOption);
+        }
+        else
+        {
+            Debug.LogWarning("Warning: Selected option is out of range.");
         }
     }
+}
 
     public void CloseDialog()
     {
         dialogPanel.SetActive(false);
-        dialogIndex = 0; // 重置对话索引
     }
 }

@@ -5,3 +5,13 @@ UserSettings/
 Packages/*.lock
 MemoryCaptures/
 .DS_Store
+Packages/packages-lock.json
+Packages/manifest.json
+Assembly-CSharp.csproj
+Alibaba.sln
+.vscode/settings.json
+.DS_Store
+Packages/packages-lock.json
+Packages/manifest.json
+Assembly-CSharp.csproj
+.DS_Store
