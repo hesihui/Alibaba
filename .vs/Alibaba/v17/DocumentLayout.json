@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\clone\\Alibaba\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\scripts\\player\\heartscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\heartscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\scripts\\mapgeneration\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|E:\\clone\\Alibaba\\assets\\scripts\\mapgeneration\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapgeneration\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ToolTip": "E:\\clone\\Alibaba\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:27:57.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HeartScript.cs",
               "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\Player\\HeartScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HeartScript.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ItemManager.cs",
               "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\MapGeneration\\ItemManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MapGeneration\\ItemManager.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MapGeneration\\ItemManager.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAkwHcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T00:37:21.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T00:37:21.678Z"
             }
           ]
         }

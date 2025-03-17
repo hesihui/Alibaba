@@ -58,7 +58,9 @@
     <Analyzer Include="F:\UnityEditor\2022.3.9f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Tortoise Boss\Demo\AssetController.cs" />
     <Compile Include="Assets\Objects\Prefabs\Drops\DropManager.cs" />
+    <Compile Include="Assets\Tortoise Boss\Demo\CreateTransformAfter.cs" />
     <Compile Include="Assets\Scripts\MapGeneration\ItemManager.cs" />
     <Compile Include="Assets\Prefabs\FloorStuff\A Star Algorithm\PathFinding.cs" />
     <Compile Include="Assets\Prefabs\FloorStuff\A Star Algorithm\Path.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Assets\Objects\Prefabs\Drops\Drop.cs" />
     <Compile Include="Assets\Scripts\Player\HeartScript.cs" />
     <Compile Include="Assets\Prefabs\Enemies\EnemyZombieTutorial\EnemyDamageScript.cs" />
+    <Compile Include="Assets\Tortoise Boss\Demo\Turtle_AnimationEvents.cs" />
     <Compile Include="Assets\Models\SpikeCubeTutorial\SpikeScript.cs" />
     <Compile Include="Assets\Prefabs\Enemies\Bosses\1\Scripts\EnemyProjectileScript.cs" />
     <Compile Include="Assets\Scripts\Player\ImpactReceiver.cs" />
@@ -96,8 +99,10 @@
     <Compile Include="Assets\Prefabs\Enemies\Bosses\1\Scripts\BossTrainScript.cs" />
     <Compile Include="Assets\Objects\Prefabs\Shop\ShopKeeper\GhostScript.cs" />
     <Compile Include="Assets\Prefabs\Enemies\EnemyZombieTutorial\ZombieScriptTutorial.cs" />
+    <Compile Include="Assets\Tortoise Boss\Demo\CameraController\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Player\ChangeRooms.cs" />
     <Compile Include="Assets\Scripts\MapGeneration\Level.cs" />
+    <Compile Include="Assets\skin.cs" />
     <Compile Include="Assets\Scripts\MapGeneration\FakeEnemyScript.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Prefabs\FloorStuff\A Star Algorithm\Grid.cs" />
