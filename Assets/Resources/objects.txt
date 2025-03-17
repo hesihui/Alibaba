@@ -1,0 +1,15 @@
+# Object descriptions
+OBJECT_NAME: desk
+TEXT: This chest contains old artifacts from the forgotten kingdom.
+
+OBJECT_NAME: statue
+TEXT: A statue of the ancient king, weathered by time.
+
+OBJECT_NAME: grave
+TEXT: A mysterious door with strange markings.
+
+OBJECT_NAME: fountain
+TEXT: A mysterious door with strange markings.
+
+OBJECT_NAME: desk_2
+TEXT: A mysterious door with strange markings.
