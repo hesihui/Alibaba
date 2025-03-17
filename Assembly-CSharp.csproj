@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{f1bdd938-6fd2-fb8c-2da3-b002fa04a0d0}</ProjectGuid>
+    <ProjectGuid>{ec3be499-2251-af55-f0a3-722ffbf455e0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -42,60 +42,74 @@
   <ItemGroup>
      <Compile Include="Assets/Objects/Prefabs/Drops/DropManager.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/ItemManager.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/PathFinding.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/Path.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/Enemy1/EnemyPathScript.cs" />
-     <Compile Include="Assets/Prefabs/Rooms/1x2/LongKnightRoom/HeadScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/FlyingRobotEnemy/FlyingRobotEnemyScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/EnemyProjectileScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieTutorial/EnemyDamageScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/WalkingEnemy/WalkingRobot.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Path.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/GenerateLevel.cs" />
      <Compile Include="Assets/TestResetDomain/ForceDomainReload.cs" />
+     <Compile Include="Assets/Scripts/Item/InteractableObject.cs" />
      <Compile Include="Assets/QuickOutline/Scripts/Outline.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/Line.cs" />
      <Compile Include="Assets/Scripts/Player/PlayerAttack.cs" />
      <Compile Include="Assets/Objects/Prefabs/Drops/DropCollector.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/Unit.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/EnemyZombieRobot/ZombieScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/BossTrainScript.cs" />
      <Compile Include="Assets/Objects/Prefabs/Drops/Drop.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Unit.cs" />
      <Compile Include="Assets/Scripts/Player/HeartScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/EnemyZombieTutorial/EnemyDamageScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Line.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Grid.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/FlyingRobotEnemy/EProjectileScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyShieldRobot/RobotShieldZombieScript.cs" />
+     <Compile Include="Assets/Scripts/Dialogue/DialogManager.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/PathRequestManager.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Rooms/1x2/LongKnightRoom/HeadScript.cs" />
      <Compile Include="Assets/Models/SpikeCubeTutorial/SpikeScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/Bosses/1/Scripts/EnemyProjectileScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/RotationScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Rocks/RockScript.cs" />
      <Compile Include="Assets/Scripts/Player/ImpactReceiver.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/Bosses/1/Scripts/BoxScript.cs" />
-     <Compile Include="Assets/Prefabs/Rocks/RockScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/Bosses/1/Scripts/RotationScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/WalkingEnemy/WalkingRobot.cs" />
+     <Compile Include="Assets/Scripts/Dialogue/NPCTrigger.cs" />
      <Compile Include="Assets/Objects/Prefabs/Item/Item.cs" />
-     <Compile Include="Assets/Scripts/Bomb/BombScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/SpiderEnemy/SpiderScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/BoxScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieTutorial/ZombieScriptTutorial.cs" />
+     <Compile Include="Assets/Scripts/Story/StoryPopupManager.cs" />
      <Compile Include="Assets/Scripts/Player/Player.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/PathRequestManager.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/EnemyShieldRobot/RobotShieldZombieScript.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/Heap.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieRobot/ZombieScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/PathFinding.cs" />
      <Compile Include="Assets/Objects/Prefabs/Shop/ShopItem.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/ShopManager.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/SpiderEnemy/SpiderScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/FlyingRobotEnemy/FlyingRobotEnemyScript.cs" />
      <Compile Include="Assets/Scripts/Player/InitalizePlayer.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/Bosses/1/Scripts/BossTrainScript.cs" />
+     <Compile Include="Assets/Scripts/Story/ItemRoomStoryPopupManager.cs" />
      <Compile Include="Assets/Objects/Prefabs/Shop/ShopKeeper/GhostScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/EnemyZombieTutorial/ZombieScriptTutorial.cs" />
+     <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Heap.cs" />
      <Compile Include="Assets/Scripts/Player/ChangeRooms.cs" />
+     <Compile Include="Assets/Scripts/Item/ItemPopupManager.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/Level.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/FakeEnemyScript.cs" />
      <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
-     <Compile Include="Assets/Prefabs/FloorStuff/A Star Algorithm/Grid.cs" />
      <Compile Include="Assets/Scripts/Player/Spell.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/WallBlaster/WallBlasterScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/WallBlaster/WallBlasterScript.cs" />
      <Compile Include="Assets/Scripts/Player/CameraScript.cs" />
-     <Compile Include="Assets/Prefabs/Enemies/FlyingRobotEnemy/EProjectileScript.cs" />
+     <Compile Include="Assets/Settings/Prefabs/Enemies/Enemy1/EnemyPathScript.cs" />
      <Compile Include="Assets/Objects/Models/TreasureChest/ChestScript.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Characters/Sources/Modular_NPC/Shaders/PT_Modular_NPC_Shader_Toon.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Weapons/Sources/Shaders/PT_Weapons_Shader_Toon.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <None Include="Assets/QuickOutline/Resources/Shaders/OutlineMask.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Village/Sources/Shaders/PT_Buildings_Shader_PBR.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Weapons/Sources/Shaders/PT_Weapons_Shader_PBR.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Characters/Sources/Modular_Armors/Shaders/PT_Armors_Shader_PBR.shader" />
+     <None Include="Assets/Resources/itemroomstory.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <None Include="Assets/Resources/dialog.txt" />
+     <None Include="Assets/Resources/objects.txt" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
@@ -105,12 +119,17 @@
      <None Include="Assets/QuickOutline/Readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/Models/NPC - Peasant Nolant/README.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets/Resources/story.txt" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Characters/Sources/Modular_Armors/Shaders/PT_Armors_Shader_Toon.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
      <None Include="Assets/QuickOutline/Resources/Shaders/OutlineFill.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Props/Sources/Shaders/PT_Props_Shader.shader" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/Polytope Studio/Lowpoly_Characters/Sources/Modular_NPC/Shaders/PT_Modular_NPC_Shader_PBR.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -362,7 +381,7 @@
         <HintPath>/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
@@ -731,130 +750,138 @@
         <HintPath>/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.MemoryProfiler">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Runtime">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.MemoryProfiler.Editor.MemoryProfilerModule">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.MemoryProfilerModule.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.MemoryProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.MemoryProfiler.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>/Users/sihui/Downloads/StickWizardTutorial/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+        <HintPath>/Users/sihui/Documents/Github/Alibaba/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityPlayModeSaver.csproj">
+      <Project>{d9f8ba4d-f48e-62d3-d3e4-fd66b2f5ae13}</Project>
+      <Name>UnityPlayModeSaver</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityPlayModeSaverEditor.csproj">
+      <Project>{ce323529-f595-1d2a-0f52-251f5162868e}</Project>
+      <Name>UnityPlayModeSaverEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
