@@ -13,6 +13,15 @@ public class GenerateLevel : MonoBehaviour
     public string StartRoomType = "StartRooms";
     public string StartRoomNumber = "0";
 
+    public List<int> disabledRooms = new List<int> { 7, 8, 11, 12, 13, 14, 15, 16, 18 };
+    public List<int> deletedRooms = new List<int> { 17 };
+    public List<int> disabledTopBottomRooms = new List<int> { };
+    public List<int> deletedTopBottomRooms = new List<int> { 0, 1 };
+    public List<int> disabledLeftRightRooms = new List<int> {  };
+    public List<int> deletedLeftRightRooms = new List<int> { 0, 1 };
+
+
+
     public Sprite CurrentRoom;
     public Sprite BRoom;
     public Sprite EmptyRoom;
@@ -66,8 +75,13 @@ public class GenerateLevel : MonoBehaviour
 
 
     int RandomRoomNumber()
-    {
-        return Random.Range(6,GameObject.Find("Rooms").transform.childCount+6);
+    {   
+        int roomNumber = Random.Range(0, GameObject.Find("Rooms").transform.childCount);
+        while (disabledRooms.Contains(roomNumber) || deletedRooms.Contains(roomNumber))
+        {
+            roomNumber = Random.Range(0, GameObject.Find("Rooms").transform.childCount);
+        }
+        return roomNumber;
     }
 
 
@@ -664,12 +678,20 @@ public class GenerateLevel : MonoBehaviour
                 {
                     R.RoomType = "TopBottomRooms";
                     R.RoomNumber = Random.Range(0, GameObject.Find("TopBottomRooms").transform.childCount);
+                    while (deletedTopBottomRooms.Contains(R.RoomNumber) || disabledTopBottomRooms.Contains(R.RoomNumber))
+                    {
+                        R.RoomNumber = Random.Range(0, GameObject.Find("TopBottomRooms").transform.childCount);
+                    }
                 }
 
                 else if (!top && !bottom && left && right)
                 {
                     R.RoomType = "LeftRightRooms";
                     R.RoomNumber = Random.Range(0, GameObject.Find("LeftRightRooms").transform.childCount);
+                    while (deletedLeftRightRooms.Contains(R.RoomNumber) || disabledLeftRightRooms.Contains(R.RoomNumber))
+                    {
+                        R.RoomNumber = Random.Range(0, GameObject.Find("LeftRightRooms").transform.childCount);
+                    }
                 }
 
             }
