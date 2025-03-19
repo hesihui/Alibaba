@@ -63,7 +63,6 @@
      <Compile Include="Assets/Scripts/Dialogue/DialogManager.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/PathRequestManager.cs" />
      <Compile Include="Assets/Settings/Prefabs/Rooms/1x2/LongKnightRoom/HeadScript.cs" />
-     <Compile Include="Assets/Models/SpikeCubeTutorial/SpikeScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/RotationScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Rocks/RockScript.cs" />
      <Compile Include="Assets/Scripts/Player/ImpactReceiver.cs" />
@@ -89,7 +88,6 @@
      <Compile Include="Assets/Scripts/MapGeneration/FakeEnemyScript.cs" />
      <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/Player/Spell.cs" />
-     <Compile Include="Assets/Settings/Prefabs/Enemies/WallBlaster/WallBlasterScript.cs" />
      <Compile Include="Assets/Scripts/Player/CameraScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Enemy1/EnemyPathScript.cs" />
      <Compile Include="Assets/Objects/Models/TreasureChest/ChestScript.cs" />
