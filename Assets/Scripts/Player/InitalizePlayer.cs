@@ -33,6 +33,8 @@ public class InitalizePlayer : MonoBehaviour
     public Sprite EmptyHeart;
     public GameObject HealthPanel;
     public GameObject DamagePanel;
+    public GameObject DeathPanel;
+
     public RuntimeAnimatorController HeartAnimatorController;
 
 
@@ -75,6 +77,7 @@ public class InitalizePlayer : MonoBehaviour
         Player.HalfHeart = HalfHeart;
         Player.HeartPanel = HealthPanel;
         Player.DamagePanel = DamagePanel;
+        Player.DeathPanel = DeathPanel;
         Player.HeartAnimator = HeartAnimatorController;
         Level.SecretRoomExplosion = SecretRoomExplosion;
         Level.SecretRoomDoor = SecretRoomDoor;
@@ -91,7 +94,7 @@ public class InitalizePlayer : MonoBehaviour
     GameObject IrI;
     public void InitializeItemRoomItem()
     {
-        if ((IrI!=null))
+        if ((IrI != null))
         {
             GameObject.Destroy(IrI);
         }
@@ -128,7 +131,7 @@ public class InitalizePlayer : MonoBehaviour
                 Transform T = GameObject.Find("ItemRooms").transform;
 
                 Debug.Log("The room it's checking is: " + R.RoomNumber);
-               ItemRoomSpawnSpot = T.Find(R.RoomNumber.ToString()).Find("ItemSpawnSpot").gameObject;
+                ItemRoomSpawnSpot = T.Find(R.RoomNumber.ToString()).Find("ItemSpawnSpot").gameObject;
             }
         }
 
@@ -137,11 +140,11 @@ public class InitalizePlayer : MonoBehaviour
         Debug.Log("Item Room Item:" + ItemRoomItem);
         Debug.Log("ItemRoomSpawnSpot:" + ItemRoomSpawnSpot);
 
-        IrI = Instantiate(ItemRoomItem.Prefab,ItemRoomSpawnSpot.transform.position + 
+        IrI = Instantiate(ItemRoomItem.Prefab, ItemRoomSpawnSpot.transform.position +
             ItemRoomItem.Prefab.transform.position,
             ItemRoomItem.Prefab.transform.rotation,
             ItemRoomSpawnSpot.transform);
-       
+
     }
 
     public static IEnumerator PixelateTransition()

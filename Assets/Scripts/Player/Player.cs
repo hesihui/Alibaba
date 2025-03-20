@@ -68,11 +68,13 @@ public static class Player
 
     public static GameObject HeartPanel;
     public static GameObject DamagePanel;
+    public static GameObject DeathPanel;
+
     public static Sprite FullHeart;
     public static Sprite HalfHeart;
     public static Sprite EmptyHeart;
     public static RuntimeAnimatorController HeartAnimator;
-    
+
 
     public static Camera Camera;
     public static Camera FallingCamera;
@@ -82,5 +84,6 @@ public static class Player
     public static Room CurrentRoom;
 
     public static CharacterController Controller;
+    public static int DeathCounter = 0;
 
 }
