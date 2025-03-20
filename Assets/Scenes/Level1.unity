@@ -61439,8 +61439,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -80846,7 +80846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -350}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443620601
@@ -86051,7 +86051,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b4c8c414aa3df845b87eefacf131a33, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -92860,6 +92860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Item_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451883745505485899, guid: ebb29bfb19647be4f8e5823d8e3258c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8757942911245090740, guid: ebb29bfb19647be4f8e5823d8e3258c7,
         type: 3}
@@ -116234,14 +116239,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1283948048}
   - {fileID: 1916052696}
+  - {fileID: 1422316154}
   m_Father: {fileID: 1472288161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 750}
-  m_SizeDelta: {x: 350, y: 300}
+  m_AnchoredPosition: {x: -1550, y: 600}
+  m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &616957447
 MonoBehaviour:
@@ -116256,15 +116261,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.03529412}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a454050719005b444b59a84eaafba779, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -223165,7 +223170,7 @@ PrefabInstance:
     - target: {fileID: 5393551225372250098, guid: 8ea777a63635e8841bfc3b95ab74cbcf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 5393551225372250098, guid: 8ea777a63635e8841bfc3b95ab74cbcf,
         type: 3}
@@ -223280,7 +223285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb7f54f38c744d45bad92db4ccf1d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: desk
+  objectName: statue
 --- !u!1 &1196642884
 GameObject:
   m_ObjectHideFlags: 0
@@ -226052,7 +226057,7 @@ MonoBehaviour:
   m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ff045d7b71668042aefdd711b86e45d, type: 2}
-  m_sharedMaterial: {fileID: 42300315847800941, guid: 72224254e6cc8104cb2073503e409334,
+  m_sharedMaterial: {fileID: 1905096792556224815, guid: 0ff045d7b71668042aefdd711b86e45d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -231877,140 +231882,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283626001}
   m_Mesh: {fileID: 6502832152569332961, guid: 9fedf911acb15384387662d7d7981cd9, type: 3}
---- !u!1 &1283948047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1283948048}
-  - component: {fileID: 1283948050}
-  - component: {fileID: 1283948049}
-  m_Layer: 5
-  m_Name: CheatMenu (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1283948048
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283948047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 616957446}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 600, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1283948049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283948047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Debug Cheats:'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4285133636
-  m_fontColor: {r: 0.26517445, g: 0.9528302, b: 0.41025093, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 23.95
-  m_fontSizeBase: 23.95
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1283948050
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283948047}
-  m_CullTransparentMesh: 1
 --- !u!1 &1284777445
 GameObject:
   m_ObjectHideFlags: 0
@@ -242775,17 +242646,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422316153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 325948257}
-  m_Father: {fileID: 1472288161}
+  m_Father: {fileID: 616957446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 765, y: 330}
   m_SizeDelta: {x: 1200, y: 300}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1422316155
@@ -245531,7 +245402,6 @@ RectTransform:
   - {fileID: 1139672171}
   - {fileID: 969350754}
   - {fileID: 616957446}
-  - {fileID: 1422316154}
   - {fileID: 204929610}
   - {fileID: 1960881929}
   - {fileID: 267977872}
@@ -275169,15 +275039,15 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_007
       Variant.prefab
   - _gameObject: {fileID: 139173410}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
   - _gameObject: {fileID: 958641825}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 1453618049}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
   - _gameObject: {fileID: 879310935}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
   - _gameObject: {fileID: 1638534783}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
   - _gameObject: {fileID: 1279823921}
     _prefab: Assets/Settings/Prefabs/Rooms/1x1/NewRoom/TorchCubePS.prefab
   - _gameObject: {fileID: 2039131548}
@@ -275195,41 +275065,41 @@ MonoBehaviour:
   - _gameObject: {fileID: 1954001896}
     _prefab: Assets/Settings/Prefabs/Rooms/1x1/NewRoom/TorchCubePS.prefab
   - _gameObject: {fileID: 1854942981}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 142432855}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
   - _gameObject: {fileID: 1211348131}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 1312301479}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_04.prefab
   - _gameObject: {fileID: 1417043896}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
   - _gameObject: {fileID: 1211736109}
     _prefab: Assets/Objects/Models/TreasureChest/SimpleChest.prefab
   - _gameObject: {fileID: 857451179}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
   - _gameObject: {fileID: 404963742}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 2013628433}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
   - _gameObject: {fileID: 910320198}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
   - _gameObject: {fileID: 1179495372}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
   - _gameObject: {fileID: 1350965269}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
   - _gameObject: {fileID: 2024195576}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
   - _gameObject: {fileID: 390919803}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
   - _gameObject: {fileID: 1454902447}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
   - _gameObject: {fileID: 1142788797}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
   - _gameObject: {fileID: 1914942660}
-    _prefab: Assets/Dungeon/URP/Prefabs/Environment/Column/NGF_Env_Column_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Environment/Column/NGF_Env_Column_02.prefab
   - _gameObject: {fileID: 1050666328}
-    _prefab: Assets/Dungeon/URP/Prefabs/Environment/Column/NGF_Env_Column_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Environment/Column/NGF_Env_Column_02.prefab
   - _gameObject: {fileID: 1648230710}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_012
       Variant.prefab
@@ -275252,21 +275122,21 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_016
       Variant.prefab
   - _gameObject: {fileID: 1110695151}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/WoodenStool_01.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/WoodenStool_01.prefab
   - _gameObject: {fileID: 835819150}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bottle_01.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bottle_01.prefab
   - _gameObject: {fileID: 1030707696}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Pot_03.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Pot_03.prefab
   - _gameObject: {fileID: 1936227027}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/FallenTree_02.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/FallenTree_02.prefab
   - _gameObject: {fileID: 410877336}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/AutumnTree_05.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/AutumnTree_05.prefab
   - _gameObject: {fileID: 379802167}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/SpringTree_05.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/SpringTree_05.prefab
   - _gameObject: {fileID: 149476408}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/BonFire_01.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/BonFire_01.prefab
   - _gameObject: {fileID: 875297444}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Trunk_03.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Trunk_03.prefab
   - _gameObject: {fileID: 1242135672}
     _prefab: Assets/Settings/Prefabs/Rooms/1x1/NewRoom/TorchCubePS.prefab
   - _gameObject: {fileID: 406374247}
@@ -275308,25 +275178,25 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_026
       Variant.prefab
   - _gameObject: {fileID: 1425250328}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Rack_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Rack_01.prefab
   - _gameObject: {fileID: 1199470853}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Rack_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Rack_01.prefab
   - _gameObject: {fileID: 1640755667}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
   - _gameObject: {fileID: 1882267819}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
   - _gameObject: {fileID: 132288415}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 1705539454}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 2060285148}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
   - _gameObject: {fileID: 62821189}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 650677274}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
   - _gameObject: {fileID: 1779347099}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
   - _gameObject: {fileID: 1098778238}
     _prefab: Assets/Settings/Prefabs/Rooms/1x1/NewRoom/TorchCubePS.prefab
   - _gameObject: {fileID: 1418974325}
@@ -275342,19 +275212,19 @@ MonoBehaviour:
   - _gameObject: {fileID: 289265559}
     _prefab: Assets/Settings/Prefabs/Rooms/1x1/NewRoom/TorchCubePS.prefab
   - _gameObject: {fileID: 1236826892}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
   - _gameObject: {fileID: 936827719}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
   - _gameObject: {fileID: 1020903176}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
   - _gameObject: {fileID: 1801037329}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
   - _gameObject: {fileID: 2145402389}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
   - _gameObject: {fileID: 1132007345}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 84564915}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 1870621276}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_013
       Variant.prefab
@@ -275362,17 +275232,18 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_020
       Variant.prefab
   - _gameObject: {fileID: 1044320608}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
   - _gameObject: {fileID: 1522932521}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
   - _gameObject: {fileID: 1512227409}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
   - _gameObject: {fileID: 1920854919}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 658011327}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 2051989246}
-    _prefab: Assets/Dungeon/URP/Prefabs/Environment/Wooden boards and bars/NGF_Env_Board_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Environment/Wooden boards
+      and bars/NGF_Env_Board_02.prefab
   - _gameObject: {fileID: 1300953039}
     _prefab: Assets/Models/NPC - MushroomMan/Prefab/MushroomMan.prefab
   - _gameObject: {fileID: 607712124}
@@ -275380,17 +275251,17 @@ MonoBehaviour:
   - _gameObject: {fileID: 384901444}
     _prefab: Assets/Models/NPC - Peasant Nolant/Models/Peasant Nolant(Free Version).fbx
   - _gameObject: {fileID: 514208966}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
   - _gameObject: {fileID: 1402155815}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
   - _gameObject: {fileID: 629575809}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
   - _gameObject: {fileID: 1384355836}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 1465079160}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 1195783344}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/NGF_Light_Pedestal_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/NGF_Light_Pedestal_01.prefab
   - _gameObject: {fileID: 346157012}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_001
       Variant.prefab
@@ -275401,63 +275272,63 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_024
       Variant.prefab
   - _gameObject: {fileID: 301254816}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 2101030127}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 1023982491}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/FallenTree_03.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/FallenTree_03.prefab
   - _gameObject: {fileID: 1701471282}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bamboos_02.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bamboos_02.prefab
   - _gameObject: {fileID: 1975102849}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bamboos_02.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bamboos_02.prefab
   - _gameObject: {fileID: 772489020}
-    _prefab: Assets/Grave/Prefab/Grave.prefab
+    _prefab: Assets/Settings/Prefabs/Grave/Prefab/Grave.prefab
   - _gameObject: {fileID: 1571642307}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bush_02.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bush_02.prefab
   - _gameObject: {fileID: 1212429311}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bush_02.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bush_02.prefab
   - _gameObject: {fileID: 1587082800}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Rock_04.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Rock_04.prefab
   - _gameObject: {fileID: 2113119955}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 1070945577}
-    _prefab: Assets/LowpolyNatureBundle/Prefab/Bamboos_01.prefab
+    _prefab: Assets/Settings/Prefabs/LowpolyNatureBundle/Prefab/Bamboos_01.prefab
   - _gameObject: {fileID: 659489344}
     _prefab: Assets/Settings/Prefabs/Ancient Clay Jug Ornate vase/Prefabs/Vase_6_light.prefab
   - _gameObject: {fileID: 659489343}
     _prefab: Assets/Settings/Prefabs/Ancient Clay Jug Ornate vase/Geometry/vase_6_unity.fbx
   - _gameObject: {fileID: 1545602112}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Stool_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Stool_02.prefab
   - _gameObject: {fileID: 968294994}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_01.prefab
   - _gameObject: {fileID: 1608079567}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_01.prefab
   - _gameObject: {fileID: 1012422421}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_02.prefab
   - _gameObject: {fileID: 128732119}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_small_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_small_02.prefab
   - _gameObject: {fileID: 1795268927}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Pieces of a jug/NGF_Pieces_of_a_jug_14.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Pieces of a jug/NGF_Pieces_of_a_jug_14.prefab
   - _gameObject: {fileID: 1517761211}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Pieces of a jug/NGF_Pieces_of_a_jug_15.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Pieces of a jug/NGF_Pieces_of_a_jug_15.prefab
   - _gameObject: {fileID: 1011938276}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Shelf_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Shelf_01.prefab
   - _gameObject: {fileID: 1316247214}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_04.prefab
   - _gameObject: {fileID: 1794860933}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 981174082}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 1585814126}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 609226595}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Bench.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Bench.prefab
   - _gameObject: {fileID: 514449199}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
   - _gameObject: {fileID: 142445808}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_01.prefab
   - _gameObject: {fileID: 756741817}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_04.prefab
   - _gameObject: {fileID: 1467631102}
     _prefab: Assets/Settings/Prefabs/Ancient Clay Jug Ornate vase/Prefabs/fountain_4_light.prefab
   - _gameObject: {fileID: 1467631101}
@@ -275469,17 +275340,17 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_001
       Variant.prefab
   - _gameObject: {fileID: 1634243911}
-    _prefab: Assets/Polytope Studio/Lowpoly_Characters/Prefabs/Modular_NPC/Skeleton/PT_Skeleton_Male_Modular.prefab
+    _prefab: Assets/Settings/Prefabs/Polytope Studio/Lowpoly_Characters/Prefabs/Modular_NPC/Skeleton/PT_Skeleton_Male_Modular.prefab
   - _gameObject: {fileID: 1896119977}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 1064099399}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 630825717}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
   - _gameObject: {fileID: 1905200876}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 984514834}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 122926982}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_014
       Variant.prefab
@@ -275490,15 +275361,15 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_010
       Variant.prefab
   - _gameObject: {fileID: 485762712}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
   - _gameObject: {fileID: 1602599946}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
   - _gameObject: {fileID: 1891756110}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
   - _gameObject: {fileID: 108135690}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
   - _gameObject: {fileID: 585907153}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
   - _gameObject: {fileID: 898850832}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_036
       Variant.prefab
@@ -275506,15 +275377,15 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_029
       Variant.prefab
   - _gameObject: {fileID: 1130404909}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
   - _gameObject: {fileID: 663853857}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
   - _gameObject: {fileID: 610775841}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
   - _gameObject: {fileID: 1971539774}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 2082670274}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 1215265047}
     _prefab: Assets/Objects/Models/TreasureChest/GoldChest.prefab
   - _gameObject: {fileID: 1180177305}
@@ -275546,35 +275417,35 @@ MonoBehaviour:
   - _gameObject: {fileID: 1267864645}
     _prefab: Assets/Settings/Prefabs/Rocks/Rock.prefab
   - _gameObject: {fileID: 1309249079}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_02.prefab
   - _gameObject: {fileID: 381949774}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Barrel_01.prefab
   - _gameObject: {fileID: 899964972}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_04.prefab
   - _gameObject: {fileID: 763629360}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Props/NGF_Crate_02.prefab
   - _gameObject: {fileID: 2141517361}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_04.prefab
   - _gameObject: {fileID: 47461090}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
   - _gameObject: {fileID: 1126920824}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
   - _gameObject: {fileID: 1586601059}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
   - _gameObject: {fileID: 1086830926}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_03.prefab
   - _gameObject: {fileID: 869158423}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Table_02.prefab
   - _gameObject: {fileID: 49539737}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Bottle_06.prefab
   - _gameObject: {fileID: 770074066}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_08.prefab
   - _gameObject: {fileID: 1307038637}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_05.prefab
   - _gameObject: {fileID: 1766529254}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Books/NGF_Book_open_01.prefab
   - _gameObject: {fileID: 1828223069}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_01.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Furniture/NGF_Chair_01.prefab
   - _gameObject: {fileID: 1635309875}
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_011
       Variant.prefab
@@ -275588,19 +275459,19 @@ MonoBehaviour:
     _prefab: Assets/Settings/Prefabs/Persian_Carpet_URP/Prefab/Persian_Carpet_URP_020
       Variant.prefab
   - _gameObject: {fileID: 1446980179}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_05.prefab
   - _gameObject: {fileID: 1753468976}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_small_04.prefab
   - _gameObject: {fileID: 999524552}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_02.prefab
   - _gameObject: {fileID: 470117160}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_group_big_03.prefab
   - _gameObject: {fileID: 1806345500}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Light/Crystal/NGF_Light_Crystal_big_04.prefab
   - _gameObject: {fileID: 1780952200}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 1632905196}
-    _prefab: Assets/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
+    _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
 --- !u!4 &1634320644
 Transform:
   m_ObjectHideFlags: 11
@@ -327614,7 +327485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 136.1, y: -58.4}
+  m_AnchoredPosition: {x: 150, y: -58.4}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916052697
@@ -327637,31 +327508,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tab - Regenerate map
+  m_text: 'M - Reveal Map
 
-    M - Reveal Map
+    E - Interact with Objects/NPCs
 
-    I - Teleport to Item Room
-
-    P
-    - Show Room List in Debug
-
-    R - Reroll Item Room Item
-
-    O - Show or Hide
-    Debug Menu
-
-'
+    Left Click Mouse
+    - Fight'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -327678,14 +327540,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.95
-  m_fontSizeBase: 23.95
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -341422,8 +341284,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 800, y: 200}
+  m_AnchoredPosition: {x: -100, y: 0}
+  m_SizeDelta: {x: 900, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012087293
 MonoBehaviour:
@@ -341458,7 +341320,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Test Test
+  m_Text: "DIALOG: Welcome, traveler... or should I say, lost soul? This vault has
+    secrets beyond gold. Will you seek the way out? The vault is not just a prison
+    of gold, but of time itself. Those who came before you are still here, in one
+    way or another.  \n"
 --- !u!222 &2012087294
 CanvasRenderer:
   m_ObjectHideFlags: 0
