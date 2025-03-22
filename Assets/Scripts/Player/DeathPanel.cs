@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DeathPanel : MonoBehaviour
 {
     // public GameObject DeathPanelObject;
     public TMPro.TextMeshProUGUI DeathPanelText;
+    public GameObject player;
+    // PlayerMovement playerMovement;
+
     // public GameObject RestartButton;
     // public GameObject QuitButton;
     // public int deathCount;
@@ -16,7 +20,7 @@ public class DeathPanel : MonoBehaviour
 
     void Start()
     {
-        
+        // playerMovement = player.GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -27,8 +31,15 @@ public class DeathPanel : MonoBehaviour
 
     public void RestartGame()
     {
+        Time.timeScale = 1;
         Player.DeathPanel.SetActive(false);
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("Level1");
+        // player.GetComponent<InitalizePlayer>().InitializeGame();
+        Player.Health = Player.MaxHealth;
+        Player.Coins = 0;
+        Player.Keys = 0;
+        Player.PlayerItems.Clear(); 
+        
     }
 
     public void QuitGame()

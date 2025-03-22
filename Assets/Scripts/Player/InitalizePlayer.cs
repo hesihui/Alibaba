@@ -49,44 +49,7 @@ public class InitalizePlayer : MonoBehaviour
     public FullScreenPassRendererFeature FSPRF;
     void Start()
     {
-
-        Application.targetFrameRate = FrameRate;
-        Player.txtCoins = txtCoins;
-        Player.txtKeys = txtKeys;
-        Player.txtBombs = txtBombs;
-        Player.Audio = AS;
-        Player.SoundEffectSource = SES;
-        Player.Camera = cam;
-        Player.FallingCamera = fallingcam;
-        Player.PixelatedPanel = PixelatedPanel;
-        Player.AttackExplosion = PlayerAttackExplosion;
-        Player.AttackDecal = PlayerAttackDecal;
-        Player.Attack = PlayerAttack;
-        Player.Bomb = Bomb;
-        Player.BombExplosion = BombExplosion;
-        Player.FSPRF = FSPRF;
-
-        Player.StaffBone = StaffBone;
-        Player.transform = PlayerTransform;
-        Player.animator = PlayerAnimator;
-        Player.Controller = PlayerController;
-        Player.PlayerStaff = PlayerStaff;
-        Player.FullHeart = FullHeart;
-        Player.EmptyHeart = EmptyHeart;
-        Player.HalfHeart = HalfHeart;
-        Player.HeartPanel = HealthPanel;
-        Player.DamagePanel = DamagePanel;
-        Player.DeathPanel = DeathPanel;
-        Player.HeartAnimator = HeartAnimatorController;
-        Level.SecretRoomExplosion = SecretRoomExplosion;
-        Level.SecretRoomDoor = SecretRoomDoor;
-        Level.XMark = XMark;
-        InitializeItemRoomItem();
-
-
-        DontDestroyOnLoad(Player.Audio.gameObject);
-        DontDestroyOnLoad(GameObject.Find("Main"));
-        DontDestroyOnLoad(GameObject.Find("UI"));
+        InitializeGame();
 
     }
 
@@ -212,6 +175,42 @@ public class InitalizePlayer : MonoBehaviour
             }
             _instance = this;
         }
+
+    }
+    public void InitializeGame()
+    {
+        Application.targetFrameRate = FrameRate;
+        Player.txtCoins = txtCoins;
+        Player.txtKeys = txtKeys;
+        Player.txtBombs = txtBombs;
+        Player.Audio = AS;
+        Player.SoundEffectSource = SES;
+        Player.Camera = cam;
+        Player.FallingCamera = fallingcam;
+        Player.PixelatedPanel = PixelatedPanel;
+        Player.AttackExplosion = PlayerAttackExplosion;
+        Player.AttackDecal = PlayerAttackDecal;
+        Player.Attack = PlayerAttack;
+        Player.Bomb = Bomb;
+        Player.BombExplosion = BombExplosion;
+        Player.FSPRF = FSPRF;
+
+        Player.StaffBone = StaffBone;
+        Player.transform = PlayerTransform;
+        Player.animator = PlayerAnimator;
+        Player.Controller = PlayerController;
+        Player.PlayerStaff = PlayerStaff;
+        Player.FullHeart = FullHeart;
+        Player.EmptyHeart = EmptyHeart;
+        Player.HalfHeart = HalfHeart;
+        Player.HeartPanel = HealthPanel;
+        Player.DamagePanel = DamagePanel;
+        Player.DeathPanel = DeathPanel;
+        Player.HeartAnimator = HeartAnimatorController;
+        Level.SecretRoomExplosion = SecretRoomExplosion;
+        Level.SecretRoomDoor = SecretRoomDoor;
+        Level.XMark = XMark;
+        InitializeItemRoomItem();
 
     }
 }
