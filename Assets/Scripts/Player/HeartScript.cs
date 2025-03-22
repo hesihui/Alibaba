@@ -130,24 +130,24 @@ public class HeartScript : MonoBehaviour
 
         yield return new WaitForSeconds(0f);
 
-        for (int i = 0; i < Player.HeartPanel.transform.childCount; ++i)
-        {
-            GameObject.Destroy(Player.HeartPanel.transform.GetChild(i).gameObject);
-        }
+        // for (int i = 0; i < Player.HeartPanel.transform.childCount; ++i)
+        // {
+        //     GameObject.Destroy(Player.HeartPanel.transform.GetChild(i).gameObject);
+        // }
 
-        Player.animator.StopPlayback();
-        Player.State = "Dead";
-        Player.Invincible = true;
-        Destroy(Player.transform.GetComponent<Animator>());
-        Destroy(Player.transform.GetComponent<PlayerMovement>());
-        Destroy(Player.transform.GetComponent<PlayerAttack>());
-        Destroy(Player.transform.GetComponent<ChangeRooms>());
-        Destroy(Player.transform.GetComponent<Rigidbody>());
-        Destroy(Player.transform.GetComponent<CharacterController>());
+        // Player.animator.StopPlayback();
+        // Player.State = "Dead";
+        // Player.Invincible = true;
+        // Destroy(Player.transform.GetComponent<Animator>());
+        // Destroy(Player.transform.GetComponent<PlayerMovement>());
+        // Destroy(Player.transform.GetComponent<PlayerAttack>());
+        // Destroy(Player.transform.GetComponent<ChangeRooms>());
+        // Destroy(Player.transform.GetComponent<Rigidbody>());
+        // Destroy(Player.transform.GetComponent<CharacterController>());
 
 
 
-        ApplyRigidBodyAndForce(transform);
+        // ApplyRigidBodyAndForce(transform);
 
         GameObject.Find("DeathEffect").GetComponent<VisualEffect>().Play();
         Player.Audio.Stop();
@@ -155,6 +155,7 @@ public class HeartScript : MonoBehaviour
         Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/Die"), 3);
         // yield return new WaitForSeconds(.5f);
         // Player.DamagePanel.SetActive(false);
+        Time.timeScale = 0;
 
     }
 
