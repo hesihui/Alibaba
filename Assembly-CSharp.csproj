@@ -40,11 +40,16 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/ExtinguishableParticleSystem.cs" />
      <Compile Include="Assets/Objects/Prefabs/Drops/DropManager.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/ItemManager.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/Hose.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/EnemyProjectileScript.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/FireLight.cs" />
+     <Compile Include="Assets/Models/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieTutorial/EnemyDamageScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/WalkingEnemy/WalkingRobot.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/AfterburnerPhysicsForce.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Path.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/GenerateLevel.cs" />
      <Compile Include="Assets/TestResetDomain/ForceDomainReload.cs" />
@@ -53,7 +58,9 @@
      <Compile Include="Assets/QuickOutline/Scripts/Outline.cs" />
      <Compile Include="Assets/Scripts/Player/PlayerAttack.cs" />
      <Compile Include="Assets/Objects/Prefabs/Drops/DropCollector.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/SmokeParticles.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/BossTrainScript.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Scripts/CameraController.cs" />
      <Compile Include="Assets/Objects/Prefabs/Drops/Drop.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Unit.cs" />
      <Compile Include="Assets/Scripts/Player/HeartScript.cs" />
@@ -64,6 +71,7 @@
      <Compile Include="Assets/Scripts/Dialogue/DialogManager.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/PathRequestManager.cs" />
      <Compile Include="Assets/Settings/Prefabs/Rooms/1x2/LongKnightRoom/HeadScript.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Dragons/Scripts/player_movement.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/RotationScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Rocks/RockScript.cs" />
      <Compile Include="Assets/Scripts/Player/ImpactReceiver.cs" />
@@ -72,18 +80,26 @@
      <Compile Include="Assets/Objects/Prefabs/Item/Item.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/SpiderEnemy/SpiderScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/BoxScript.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Dragons/Scripts/Camera/CameraFollow.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieTutorial/ZombieScriptTutorial.cs" />
      <Compile Include="Assets/Scripts/Story/StoryPopupManager.cs" />
      <Compile Include="Assets/Scripts/Player/Player.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Dragons/Scripts/player_attack.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieRobot/ZombieScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/PathFinding.cs" />
      <Compile Include="Assets/Objects/Prefabs/Shop/ShopItem.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/ShopManager.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/FlyingRobotEnemy/FlyingRobotEnemyScript.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Dragons/Scripts/animator_controller.cs" />
      <Compile Include="Assets/Scripts/Player/InitalizePlayer.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Dragons/Scripts/animator_settor.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/WaterHoseParticles.cs" />
      <Compile Include="Assets/Scripts/Story/ItemRoomStoryPopupManager.cs" />
      <Compile Include="Assets/Objects/Prefabs/Shop/ShopKeeper/GhostScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/FloorStuff/A Star Algorithm/Heap.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/ExplosionFireAndDebris.cs" />
+     <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/ParticleSystemMultiplier.cs" />
      <Compile Include="Assets/Scripts/Player/ChangeRooms.cs" />
      <Compile Include="Assets/Scripts/Item/ItemPopupManager.cs" />
      <Compile Include="Assets/Scripts/MapGeneration/Level.cs" />
@@ -92,7 +108,6 @@
      <Compile Include="Assets/Scripts/Player/Spell.cs" />
      <Compile Include="Assets/Scripts/Player/CameraScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Enemy1/EnemyPathScript.cs" />
-     <Compile Include="Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs" />
      <Compile Include="Assets/Objects/Models/TreasureChest/ChestScript.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
@@ -117,11 +132,15 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+     <None Include="Assets/Models/BattleDragon/readme.txt" />
      <None Include="Assets/QuickOutline/Readme.txt" />
+     <None Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Shaders/PriorityParticleAddSoft.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/Models/NPC - Peasant Nolant/README.txt" />
+     <None Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Shaders/PriorityParticleAdd.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Shaders/PriorityParticleAlpha.shader" />
      <None Include="Assets/Resources/story.txt" />
      <None Include="Assets/Settings/Prefabs/Polytope Studio/Lowpoly_Characters/Sources/Modular_Armors/Shaders/PT_Armors_Shader_Toon.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
