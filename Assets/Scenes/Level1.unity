@@ -190211,7 +190211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &951780473
 Transform:
   m_ObjectHideFlags: 0
@@ -305459,7 +305459,7 @@ MonoBehaviour:
   - _gameObject: {fileID: 1634243911}
     _prefab: Assets/Settings/Prefabs/Polytope Studio/Lowpoly_Characters/Prefabs/Modular_NPC/Skeleton/PT_Skeleton_Male_Modular.prefab
   - _gameObject: {fileID: 342153188}
-    _prefab: Assets/BattleDragon/Dragons/Axe/dragon.fbx
+    _prefab: Assets/Models/BattleDragon/Dragons/Axe/dragon.fbx
   - _gameObject: {fileID: 1896119977}
     _prefab: Assets/Settings/Prefabs/Dungeon/URP/Prefabs/Misc/Item/Bottles Jugs Cups/NGF_Jug_05.prefab
   - _gameObject: {fileID: 1064099399}
