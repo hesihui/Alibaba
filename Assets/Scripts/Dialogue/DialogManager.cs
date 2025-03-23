@@ -115,7 +115,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoices.Length > 2 && currentChoices[2].Length > 0)
             option3Text.text = currentChoices[2][0]; 
     }
-
+    
 void SelectOption(int option)
 {
     if (dialogIndex == currentDialogLines.Length - 1)
@@ -124,25 +124,53 @@ void SelectOption(int option)
         {
             string selectedOption = currentChoices[option][0];
 
-            Debug.Log("Player selected: " + selectedOption);
+            Debug.Log("🎮 Player selected: " + selectedOption);
 
-            // Close the dialog if the player chooses "Give Up Quest"
+            // 硬编码 NPC 回应
+            string npcResponse = "Hmm... interesting choice."; // 默认回应
+
+            if (currentNpcName == "Old Man")
+            {
+                if (option == 0) npcResponse = "The secrets of this vault are older than time itself… Will you dare to uncover them?";
+                if (option == 1) npcResponse = "This place is not what it seems. Keep your eyes open.";
+                if (option == 2) npcResponse = "Hmph. Another lost soul ignoring the warnings.";
+            }
+            else if (currentNpcName == "Peasant")
+            {
+                if (option == 0) npcResponse = "Some say the vault chooses who can leave... and who must stay.";
+                if (option == 1) npcResponse = "Silence? Hah… a rare choice. But sometimes, silence speaks louder than words.";
+                if (option == 2) npcResponse = "Suit yourself, but knowledge is the true power.";
+            }
+            else if (currentNpcName == "Skeleton")
+            {
+                if (option == 0) npcResponse = "A wise move... the past may hold the key to your future.";
+                if (option == 1) npcResponse = "A silent traveler? Hmph. You may last longer than most.";
+                if (option == 2) npcResponse = "Leaving so soon? I was just starting to enjoy our little chat.";
+            }
+
+            // 显示 NPC 的回应
+            ShowText(npcResponse);
+
+            // 如果玩家选择 "Leave"，自动关闭对话
             if (selectedOption.ToLower().Contains("leave"))
             {
-                Debug.Log("Closing dialog automatically.");
+                Debug.Log("🛑 Closing dialog automatically.");
                 CloseDialog();
                 return;
             }
 
-            // Continue displaying the player's selection
-            ShowText("You selected: " + selectedOption);
+            // 隐藏选项按钮
+            option1Button.gameObject.SetActive(false);
+            option2Button.gameObject.SetActive(false);
+            option3Button.gameObject.SetActive(false);
         }
         else
         {
-            Debug.LogWarning("Warning: Selected option is out of range.");
+            Debug.LogWarning("⚠️ Warning: Selected option is out of range.");
         }
     }
 }
+
 
     public void CloseDialog()
     {

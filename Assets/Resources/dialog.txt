@@ -1,20 +1,29 @@
 # NPC_1: Old Man
 NPC_NAME: Old Man
-DIALOG: Welcome to the village! | I have a quest for you. | What will you do?
-OPTION1: Accept the quest | Ignore him | Ask for details
-OPTION2: Fight the bandits | Negotiate with them | Leave the area
-OPTION3: Leave | Try again | End the conversation
+DIALOG: Welcome, traveler... or should I say, lost soul? This vault has secrets beyond gold. Will you seek the way out? The vault is not just a prison of gold, but of time itself. Those who came before you are still here, in one way or another.
+OPTION1: Ask about the secrets  
+OPTION1_RESPONSE: The secrets of this vault are older than time itself… Will you dare to uncover them?
+OPTION2: Ask about the vault  
+OPTION2_RESPONSE: This place is not what it seems. Keep your eyes open.
+OPTION3: Leave  
+OPTION3_RESPONSE: Hmph. Another lost soul ignoring the warnings.
 
 # NPC_2: Peasant
 NPC_NAME: Peasant
-DIALOG: Ah, a new customer! 
-OPTION1: Buy an item 
-OPTION2: Buy a potion
-OPTION3: Leave
+DIALOG: Ah, a new customer! The vault is alive, you know. It remembers everyone who walks its halls.
+OPTION1: Ask for more information  
+OPTION1_RESPONSE: Some say the vault chooses who can leave... and who must stay.
+OPTION2: Say nothing  
+OPTION2_RESPONSE: Silence? Hah… a rare choice. But sometimes, silence speaks louder than words.
+OPTION3: Leave  
+OPTION3_RESPONSE: Suit yourself, but knowledge is the true power.
 
 # NPC_3: Skeleton
 NPC_NAME: Skeleton
-DIALOG: Ah, a new customer! 
-OPTION1: Buy an item 
-OPTION2: Buy a potion
-OPTION3: Leave
+DIALOG: Everything here comes at a cost. Some pay in gold, others pay in time.
+OPTION1: Glance back  
+OPTION1_RESPONSE: A wise move... the past may hold the key to your future.
+OPTION2: Say nothing  
+OPTION2_RESPONSE: A silent traveler? Hmph. You may last longer than most.
+OPTION3: Leave  
+OPTION3_RESPONSE: Leaving so soon? I was just starting to enjoy our little chat.

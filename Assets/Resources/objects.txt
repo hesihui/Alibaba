@@ -1,15 +1,15 @@
 # Object descriptions
 OBJECT_NAME: desk
-TEXT: This chest contains old artifacts from the forgotten kingdom.
+TEXT: Dust blankets the wooden desk, its surface scarred by time and restless hands. One of the scrolls is still legible, albeit barely: "To those who enter: beware. The vault does not give, it only takes."
 
 OBJECT_NAME: statue
-TEXT: A statue of the ancient king, weathered by time.
+TEXT: "Here stands the king who refused to leave. And so, he never did." There is something unsettling about the way the statue's empty gaze follows you. Was he the ruler of this forgotten kingdom? Or its prisoner?
 
 OBJECT_NAME: grave
-TEXT: A mysterious door with strange markings.
+TEXT: The grave is unlike the others, its tombstone devoid of a name. Instead, an unfamiliar script coils around its surface like a warning. The markings glow faintly when approached, a pulse of energy flickering beneath the stone.
 
 OBJECT_NAME: fountain
-TEXT: A mysterious door with strange markings.
+TEXT: Water once flowed through this fountain, but now it lies still, murky and lifeless. As you gaze into its surface, you see something that should not be there—a shadow standing behind you. Yet when you turn, there is nothing.
 
 OBJECT_NAME: desk_2
-TEXT: A mysterious door with strange markings.
+TEXT: This desk is identical to the first, yet there is something… off. The artifacts it holds are the same, but distorted—as if their very essence is fading.

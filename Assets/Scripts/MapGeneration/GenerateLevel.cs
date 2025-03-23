@@ -24,6 +24,15 @@ public class GenerateLevel : MonoBehaviour
 
     private bool BossRoomGenerated = false;
 
+    public List<int> enabledRooms = new List<int> { 6, 9, 10 };
+    public List<int> enabledTopBottomRooms = new List<int> { 3 };
+    public List<int> enabledLeftRightRooms = new List<int> { 2 };
+    //public List<int> enabledStartRooms = new List<int> { };
+    //public List<int> enabledItemRooms = new List<int> { };
+    //public List<int> enabledBossRooms = new List<int> { };
+    //public List<int> enabledShopRooms = new List<int> { };
+    public List<int> enabled2x2Rooms = new List<int> { 1 };
+
 
     void DrawRoomOnMap(Room R)
     {
@@ -67,7 +76,9 @@ public class GenerateLevel : MonoBehaviour
 
     int RandomRoomNumber()
     {
-        return Random.Range(6,GameObject.Find("Rooms").transform.childCount+6);
+        int randomIndex = Random.Range(0, enabledRooms.Count);
+
+        return enabledRooms[randomIndex];
     }
 
 
@@ -601,7 +612,7 @@ public class GenerateLevel : MonoBehaviour
                 Level.Rooms.RemoveAll(x => x.Location == room.Location + new Vector2(1, 1));
 
 
-                int roomNumber = Random.Range(0, GameObject.Find("2x2Rooms").transform.childCount);
+                int roomNumber = enabled2x2Rooms[0];
 
                 Room AnchRoom;
 
@@ -663,13 +674,13 @@ public class GenerateLevel : MonoBehaviour
                 if (top && bottom && !left && !right)
                 {
                     R.RoomType = "TopBottomRooms";
-                    R.RoomNumber = Random.Range(0, GameObject.Find("TopBottomRooms").transform.childCount);
+                    R.RoomNumber = enabledTopBottomRooms[0];
                 }
 
                 else if (!top && !bottom && left && right)
                 {
                     R.RoomType = "LeftRightRooms";
-                    R.RoomNumber = Random.Range(0, GameObject.Find("LeftRightRooms").transform.childCount);
+                    R.RoomNumber = enabledLeftRightRooms[0];
                 }
 
             }

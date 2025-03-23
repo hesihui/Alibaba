@@ -24,17 +24,17 @@ public class HeartScript : MonoBehaviour
         float YPos = -5;
         if (num <= 9)
         {
-             XPos = num * Player.HeartPanel.GetComponent<RectTransform>().sizeDelta.x / 10;
+            XPos = num * Player.HeartPanel.GetComponent<RectTransform>().sizeDelta.x / 10;
         }
         else
         {
-            XPos = (num-10) * Player.HeartPanel.GetComponent<RectTransform>().sizeDelta.x / 10;
+            XPos = (num - 10) * Player.HeartPanel.GetComponent<RectTransform>().sizeDelta.x / 10;
             YPos = -5 - Player.HeartPanel.GetComponent<RectTransform>().sizeDelta.x / 10;
         }
         rectTransform.position = new Vector2(XPos, YPos);
         rectTransform.pivot = new Vector2(0f, 1f);
         rectTransform.anchorMin = new Vector2(0, 1);
-        rectTransform.anchorMax= new Vector2(0, 1);
+        rectTransform.anchorMax = new Vector2(0, 1);
         HeartImage.transform.SetParent(Player.HeartPanel.transform, false);
 
     }
@@ -43,7 +43,7 @@ public class HeartScript : MonoBehaviour
     public static void DrawHearts()
     {
 
-        for (int i = 0; i <= Player.Health - 1; i++) 
+        for (int i = 0; i <= Player.Health - 1; i++)
         {
             DrawHeart(Player.FullHeart, i);
         }
@@ -53,7 +53,7 @@ public class HeartScript : MonoBehaviour
             DrawHeart(Player.HalfHeart, (int)Player.Health);
         }
 
-        for (int i = (int)Player.Health; i <= Player.MaxHealth-1; ++i)
+        for (int i = (int)Player.Health; i <= Player.MaxHealth - 1; ++i)
         {
             DrawHeart(Player.EmptyHeart, (int)i);
         }
@@ -75,7 +75,7 @@ public class HeartScript : MonoBehaviour
 
             if (child.gameObject.name == "DeathEffect") continue;
 
-            if(child.gameObject.name.Contains("OuterLeftArm")) child.gameObject.SetActive(false);
+            if (child.gameObject.name.Contains("OuterLeftArm")) child.gameObject.SetActive(false);
 
             Rigidbody rb = child.gameObject.GetComponent<Rigidbody>();
             if (rb == null)
@@ -85,7 +85,7 @@ public class HeartScript : MonoBehaviour
                 rb = child.gameObject.AddComponent<Rigidbody>();
             }
 
-          
+
             Vector3 randomForce = new Vector3(
                 Random.Range(-1f, 1f),
                 Random.Range(.5f, 1f),
@@ -102,41 +102,60 @@ public class HeartScript : MonoBehaviour
                 child.position = newPos;
             }
 
-          
+
             ApplyRigidBodyAndForce(child);
         }
     }
 
     public static IEnumerator Die(Transform transform)
     {
-        Player.DamagePanel.SetActive(true);
+        Player.DeathCounter++;
+        // Player.DeathPanel.SetDeathPanelText(Player.DeathCounter, Player.Keys, Player.Coins, Player.PlayerItems);
+        Player.DeathPanel.SetActive(true);
+        // Player.DeathPanel.deathCount = Player.DeathCounter;
+        // Player.DeathPanel.keys = Player.Keys;
+        // Player.DeathPanel.coins = Player.Coins;
+        string itemText = "You collected the following items:\n";
+        foreach (Item item in Player.PlayerItems)
+        {
+            itemText += item.ItemCaption + "\n";
+        }
+        var deathPanelComponent = Player.DeathPanel.GetComponent<DeathPanel>();
+
+        deathPanelComponent.DeathPanelText.text =
+            "You died " + Player.DeathCounter + " times.\n" +
+            "You collected " + Player.Keys + " keys.\n" +
+            "You collected " + Player.Coins + " coins.\n" +
+            itemText;
+
         yield return new WaitForSeconds(0f);
 
-        for (int i = 0; i < Player.HeartPanel.transform.childCount; ++i)
-        {
-            GameObject.Destroy(Player.HeartPanel.transform.GetChild(i).gameObject);
-        }
+        // for (int i = 0; i < Player.HeartPanel.transform.childCount; ++i)
+        // {
+        //     GameObject.Destroy(Player.HeartPanel.transform.GetChild(i).gameObject);
+        // }
 
-        Player.animator.StopPlayback();
-        Player.State = "Dead";
-        Player.Invincible = true;
-        Destroy(Player.transform.GetComponent<Animator>());
-        Destroy(Player.transform.GetComponent<PlayerMovement>());
-        Destroy(Player.transform.GetComponent<PlayerAttack>());
-        Destroy(Player.transform.GetComponent<ChangeRooms>());
-        Destroy(Player.transform.GetComponent<Rigidbody>());
-        Destroy(Player.transform.GetComponent<CharacterController>());
-        
+        // Player.animator.StopPlayback();
+        // Player.State = "Dead";
+        // Player.Invincible = true;
+        // Destroy(Player.transform.GetComponent<Animator>());
+        // Destroy(Player.transform.GetComponent<PlayerMovement>());
+        // Destroy(Player.transform.GetComponent<PlayerAttack>());
+        // Destroy(Player.transform.GetComponent<ChangeRooms>());
+        // Destroy(Player.transform.GetComponent<Rigidbody>());
+        // Destroy(Player.transform.GetComponent<CharacterController>());
 
 
-        ApplyRigidBodyAndForce(transform);
+
+        // ApplyRigidBodyAndForce(transform);
 
         GameObject.Find("DeathEffect").GetComponent<VisualEffect>().Play();
         Player.Audio.Stop();
-        Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/DeathSound"),3);
+        Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/DeathSound"), 3);
         Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/Die"), 3);
-        yield return new WaitForSeconds(.5f);
-        Player.DamagePanel.SetActive(false);
+        // yield return new WaitForSeconds(.5f);
+        // Player.DamagePanel.SetActive(false);
+        Time.timeScale = 0;
 
     }
 
@@ -152,13 +171,14 @@ public class HeartScript : MonoBehaviour
             GameObject.Destroy(Player.HeartPanel.transform.GetChild(i).gameObject);
         }
         DrawHearts();
-   
+
     }
 
     public static void TakeDamage(float damage)
     {
         if (!Player.Invincible)
-        {   Player.Invincible = true;
+        {
+            Player.Invincible = true;
             CoroutineManager.Instance.StartCoroutine(Uninvincible());
             Player.SoundEffectSource.pitch = Random.Range(.8f, 1.5f);
             Player.SoundEffectSource.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/Damage"), 1);
@@ -189,7 +209,7 @@ public class HeartScript : MonoBehaviour
                 Player.HeartPanel.transform.GetChild((int)Player.Health - i).GetComponent<Image>().sprite = Player.EmptyHeart;
             }
             Player.Health -= damage;
-            if(Player.Health > 0) CoroutineManager.Instance.StartCoroutine(WaitAndRedrawHearts());
+            if (Player.Health > 0) CoroutineManager.Instance.StartCoroutine(WaitAndRedrawHearts());
         }
     }
 
@@ -197,13 +217,13 @@ public class HeartScript : MonoBehaviour
     {
         DrawHearts();
 
-        
+
     }
 
 
-   
 
 
 
-    
+
+
 }
