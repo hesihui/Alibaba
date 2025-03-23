@@ -9,6 +9,7 @@ using UnityEngine.VFX;
 
 public class BossTrainScript : Unit
 {
+    public Transform headTransform;
     bool starting = true;
     public GameObject Attack;
     public float turnspeed = 50;
@@ -22,7 +23,7 @@ public class BossTrainScript : Unit
     public Light DL;
 
     public Volume globalVolume;
-     UnityEngine.Rendering.Universal.ChromaticAberration CA;
+    UnityEngine.Rendering.Universal.ChromaticAberration CA;
     UnityEngine.Rendering.Universal.LiftGammaGain LGG;
 
     public GameObject FinalCube;
@@ -30,14 +31,14 @@ public class BossTrainScript : Unit
     {
         base.Start();
 
-       
+
         globalVolume.profile.TryGet(out CA);
         globalVolume.profile.TryGet(out LGG);
 
         StartCoroutine(DelayedNoise());
         StartCoroutine(MoveAllAttacks());
         A = transform.parent.GetComponent<Animator>();
-        
+
     }
 
     public IEnumerator ResetLight()
@@ -63,21 +64,21 @@ public class BossTrainScript : Unit
         DL.intensity = 1;
         CA.intensity.value = 0;
 
-        
-        
+
+
     }
 
     public IEnumerator DelayedNoise()
     {
         LGG.active = true;
-        LGG.lift.value = new Vector4(0.0f, 0.0f, 1.0f, -.6f); 
-        
+        LGG.lift.value = new Vector4(0.0f, 0.0f, 1.0f, -.6f);
+
         Player.SoundEffectSource.PlayOneShot(Resources.Load<AudioClip>("Sounds/Enemies/Bosses/1/BossWHOOSH"), 1);
         float duration = 5f;
         float elapsedTime = 0.0f;
         float currentIntensity = DL.intensity;
         float targetIntensity = Random.Range(0f, 1.5f);
-        float cycleTime = .4f; 
+        float cycleTime = .4f;
         float cycleElapsedTime = 0.0f;
 
         while (elapsedTime < duration)
@@ -90,14 +91,14 @@ public class BossTrainScript : Unit
             }
 
             DL.intensity = Mathf.Lerp(currentIntensity, targetIntensity, cycleElapsedTime / cycleTime);
-            CA.intensity.value = DL.intensity*3;
-            LGG.lift.value = new Vector4(0.0f, 0.0f, 1.0f, Mathf.Lerp(-.6f, -.1f,DL.intensity/1.5f));
+            CA.intensity.value = DL.intensity * 3;
+            LGG.lift.value = new Vector4(0.0f, 0.0f, 1.0f, Mathf.Lerp(-.6f, -.1f, DL.intensity / 1.5f));
             cycleElapsedTime += Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null;
         }
         StartCoroutine(ResetLight());
-       
+
         A.enabled = false;
         starting = false;
         Smoke1.Play();
@@ -110,10 +111,10 @@ public class BossTrainScript : Unit
     public IEnumerator MoveAllAttacks()
     {
         yield return new WaitForSeconds(Random.Range(3, 6));
-        foreach(GameObject attack in AllAttacks)
+        foreach (GameObject attack in AllAttacks)
         {
 
-            attack.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-5,6),0,0) * 10, ForceMode.Impulse);
+            attack.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-5, 6), 0, 0) * 10, ForceMode.Impulse);
         }
         StartCoroutine(MoveAllAttacks());
 
@@ -125,7 +126,7 @@ public class BossTrainScript : Unit
 
     public IEnumerator DoAttack()
     {
-        yield return new WaitForSeconds(Random.Range(1,3));
+        yield return new WaitForSeconds(Random.Range(1, 3));
 
         Vector3 startPosition = transform.position;
         Vector3 lungePosition = startPosition + transform.forward * lungeDistance;
@@ -140,20 +141,21 @@ public class BossTrainScript : Unit
         transform.position = lungePosition;
         Player.SoundEffectSource.PlayOneShot(Resources.Load<AudioClip>("Sounds/Enemies/Bosses/1/ElectricAttack"), 4);
 
-        //attack here
+        // Attack here, considering the rotation adjustment
         for (int i = 0; i <= 3; ++i)
         {
-            GameObject attk = Instantiate(Attack, (transform.position + transform.forward * 20) + new Vector3(0, 5, 0), Quaternion.identity);
+            Vector3 attackDirection = Quaternion.Euler(0, 90, 0) * transform.forward; // Adjusting direction for the new body orientation
+            Vector3 attackPosition = transform.position + attackDirection * 20; // Moves the attack spawn point forward relative to the new forward direction
+            GameObject attk = Instantiate(Attack, attackPosition + new Vector3(0, 5, 0), Quaternion.identity);
             float size = Random.Range(3, 4);
             attk.transform.localScale = new Vector3(size, size, size);
             Vector3 randomSpread = Vector3.right * Random.Range(-1.0f, 1.0f);
             Vector3 randomUpDown = Vector3.up * Random.Range(-0.5f, 0.5f);
-            Vector3 forceDirection = (transform.forward + Vector3.right * (i - 1) + randomSpread + randomUpDown).normalized;
+            Vector3 forceDirection = (attackDirection + randomSpread + randomUpDown).normalized;
             float randomForce = Random.Range(50, 100);
             attk.GetComponent<Rigidbody>().AddForce(forceDirection * randomForce, ForceMode.Impulse);
             AllAttacks.Add(attk);
             GameObject.Destroy(attk, 100);
-
         }
 
         elapsedTime = 0f;
@@ -167,15 +169,23 @@ public class BossTrainScript : Unit
 
         StartCoroutine(DoAttack());
     }
+
+
     private void Update()
     {
-        if (!starting)
+        if (!starting && Player.transform != null)
         {
-            Vector3 direction = Player.transform.position - transform.position;
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation  = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * turnspeed);
+            Vector3 bodyDirection = Player.transform.position - transform.position;
+            bodyDirection.y = 0; // Keep the rotation in the horizontal plane.
+            Quaternion bodyTargetRotation = Quaternion.LookRotation(bodyDirection);
+
+     
+            bodyTargetRotation *= Quaternion.Euler(0, -90, 0);
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, bodyTargetRotation, Time.deltaTime * turnspeed);
         }
     }
+
 
     public IEnumerator DieBossDieeeeeeeeeee(List<GameObject> attacks)
     {
@@ -201,7 +211,7 @@ public class BossTrainScript : Unit
                 }
             }
 
-            
+
             yield return null;
 
         }

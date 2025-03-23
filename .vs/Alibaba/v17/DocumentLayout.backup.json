@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "E:\\clone\\Alibaba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\settings\\prefabs\\enemies\\bosses\\1\\scripts\\bosstrainscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\settings\\prefabs\\enemies\\bosses\\1\\scripts\\bosstrainscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|E:\\clone\\Alibaba\\assets\\tortoise boss\\demo\\turtle_animationevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\tortoise boss\\demo\\turtle_animationevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|E:\\clone\\Alibaba\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|e:\\clone\\alibaba\\assets\\scripts\\player\\heartscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|E:\\clone\\Alibaba\\assets\\scripts\\player\\heartscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99E43BEC-5122-55AF-F0A3-722FFBF455E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\heartscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,11 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Turtle_AnimationEvents.cs",
+              "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Tortoise Boss\\Demo\\Turtle_AnimationEvents.cs",
+              "RelativeDocumentMoniker": "Assets\\Tortoise Boss\\Demo\\Turtle_AnimationEvents.cs",
+              "ToolTip": "E:\\clone\\Alibaba\\Assets\\Tortoise Boss\\Demo\\Turtle_AnimationEvents.cs",
+              "RelativeToolTip": "Assets\\Tortoise Boss\\Demo\\Turtle_AnimationEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:03:18.186Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BossTrainScript.cs",
+              "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Settings\\Prefabs\\Enemies\\Bosses\\1\\Scripts\\BossTrainScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Settings\\Prefabs\\Enemies\\Bosses\\1\\Scripts\\BossTrainScript.cs",
+              "ToolTip": "E:\\clone\\Alibaba\\Assets\\Settings\\Prefabs\\Enemies\\Bosses\\1\\Scripts\\BossTrainScript.cs",
+              "RelativeToolTip": "Assets\\Settings\\Prefabs\\Enemies\\Bosses\\1\\Scripts\\BossTrainScript.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwJkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T04:01:29.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\Player\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
@@ -34,12 +67,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttack.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T22:27:57.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T22:27:57.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HeartScript.cs",
               "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\Player\\HeartScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HeartScript.cs",
@@ -47,12 +79,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\HeartScript.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T00:39:38.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T00:39:38.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ItemManager.cs",
               "DocumentMoniker": "E:\\clone\\Alibaba\\Assets\\Scripts\\MapGeneration\\ItemManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MapGeneration\\ItemManager.cs",
