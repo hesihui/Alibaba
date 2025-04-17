@@ -100747,7 +100747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -113740,7 +113740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -113750,7 +113750,7 @@ MonoBehaviour:
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &579326560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119375,7 +119375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -129731,7 +129731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -129741,7 +129741,7 @@ MonoBehaviour:
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &685036124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195321,7 +195321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -196045,7 +196045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -196055,7 +196055,7 @@ MonoBehaviour:
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &981453352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203704,7 +203704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -205802,17 +205802,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 2
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
   target: {fileID: 543450653020128316}
-  speed: 35
+  speed: 25
   turnDst: 5
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &1058798369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244875,17 +244875,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 2
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
   target: {fileID: 543450653020128316}
-  speed: 35
+  speed: 25
   turnDst: 5
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &1206253821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254948,17 +254948,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
   target: {fileID: 543450653020128316}
-  speed: 35
+  speed: 25
   turnDst: 5
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &1282959422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261226,7 +261226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -261236,7 +261236,7 @@ MonoBehaviour:
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &1302722410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264895,7 +264895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -352737,7 +352737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -352747,7 +352747,7 @@ MonoBehaviour:
   TurnSpeed: 5
   rb: {fileID: 0}
   HitPlayer: 0
-  damage: 1
+  damage: 0.5
 --- !u!114 &1905549488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396072,7 +396072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 0
-  Health: 4
+  Health: 1
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
@@ -430180,7 +430180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawPath: 0
   MonsterMovementType: 99999
-  Health: 200
+  Health: 50
   EnemyDeathEffect: {fileID: 7808667335373457500, guid: c428558892b92e647b691bc4fd9c0877,
     type: 3}
   LesserEnemy: 1
