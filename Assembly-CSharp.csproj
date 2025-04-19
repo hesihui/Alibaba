@@ -46,6 +46,7 @@
      <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/Hose.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/Bosses/1/Scripts/EnemyProjectileScript.cs" />
      <Compile Include="Assets/Models/BattleDragon/Colosseum/Dust/ParticleSystems/Scripts/FireLight.cs" />
+     <Compile Include="Assets/Resources/CrosshairCursor/CursorManager.cs" />
      <Compile Include="Assets/Models/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/EnemyZombieTutorial/EnemyDamageScript.cs" />
      <Compile Include="Assets/Settings/Prefabs/Enemies/WalkingEnemy/WalkingRobot.cs" />

@@ -25,12 +25,35 @@ public class ItemManager : MonoBehaviour
     
     public static void PickupItem(Item item)
     {
+        if (item == null)
+        {
+            Debug.LogError("❌ PickupItem 收到 null 参数！");
+            return;
+        }
+
         Player.PlayerItems.Add(item);
         GameObject GO = GameObject.Find("Canvas").transform.Find("PopupPanel").gameObject;
+        if (GO == null)
+        {
+            Debug.LogError("❌ 找不到 PopupPanel，确认场景中有 Canvas/PopupPanel 结构");
+            return;
+        }
         GO.SetActive(true);
+
+        TMP_Text popupText = GO.transform.Find("PopupText")?.GetComponent<TMP_Text>();
+            if (popupText == null)
+            {
+                Debug.LogError("❌ PopupText UI 丢失或未挂 TMP_Text 组件！");
+                return;
+            }
+            popupText.text = "You picked up a\n" + item.name + "\n" + item.ItemCaption;
         GO.transform.Find("PopupText").GetComponent<TMP_Text>().text = "You picked up a\n" + item.name +
             "\n" + item.ItemCaption;
 
+            // foreach (var item in Player.AvailableItems)
+            // {
+            //     Debug.Log("已加载 Item：" + item.name);
+            // }
         CoroutineManager.Instance.StartCoroutine(ResetPopUp(GO));
 
        

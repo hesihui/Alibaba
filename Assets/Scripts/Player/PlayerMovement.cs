@@ -154,6 +154,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (Player.Camera == null)
+        {
+            Debug.LogWarning("Player.Camera is null!");
+            return;
+        }
+
         Vector3 targetPosition = transform.position + new Vector3(0, 109, 0);
         Vector3 newPosition = Vector3.MoveTowards(Player.Camera.transform.position, targetPosition, 500f * Time.deltaTime);
         Player.Camera.transform.position = newPosition;
@@ -187,6 +193,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
 
+        // Debug.Log($"[碰撞检测] 撞到了：{hit.transform.name}");
+
         Rigidbody rb = hit.collider.attachedRigidbody;
         if (rb != null)
         {
@@ -206,35 +214,52 @@ public class PlayerMovement : MonoBehaviour
             if (hit.transform.GetComponent<VisualEffect>().aliveParticleCount > 0) Level.LoadNextLevel();
             
         }
-        else if (hit.gameObject.layer == LayerMask.NameToLayer("Item"))
+else if (hit.gameObject.layer == LayerMask.NameToLayer("Item"))
+{
+    if (!Player.AlreadyPickedUpCoins.Contains(hit.transform.GetInstanceID()))
+    {
+        Player.AlreadyPickedUpCoins.Add(hit.transform.GetInstanceID());
+
+        string hitName = hit.transform.name.Replace("(Clone)", "");
+        Debug.Log("尝试拾取 Item：" + hitName);
+
+        // 更安全的匹配逻辑
+        var match = Player.AvailableItems.FirstOrDefault(x => hitName == x.name);
+        if (match == null)
         {
-            if (!Player.AlreadyPickedUpCoins.Contains(hit.transform.GetInstanceID()))
+            Debug.LogWarning("❌ 在 AvailableItems 中未找到匹配项：" + hitName);
+            return;
+        }
+
+        ItemManager.PickupItem(match);
+
+        // 安全判断是否需要从列表移除
+        if (match.name != "Bowl Of Balls")
+        {
+            if (hit.transform.name.Contains("Cube Staff"))
             {
-                Player.AlreadyPickedUpCoins.Add(hit.transform.GetInstanceID());
-                ItemManager.PickupItem(Player.AvailableItems.First(x => hit.transform.name.Replace("(Clone)","") == x.name));
-
-                if (Player.AvailableItems.First(x => hit.transform.name.Contains(x.name)).name != "Bowl Of Balls")
+                Player.AvailableItems.RemoveAll(x => x.name.Contains("Cube Staff"));
+            }
+            else if (hit.transform.name.Contains("Helmet"))
+            {
+                Player.AvailableItems.RemoveAll(x => x.name.Contains("Helmet"));
+            }
+            else
+            {
+                var removeMatch = Player.AvailableItems.FirstOrDefault(x => hit.transform.name.Contains(x.name));
+                if (removeMatch != null)
                 {
-                    if (hit.transform.name.Contains("Cube Staff"))
-                    {
-                        Player.AvailableItems.RemoveAll(x => x.name.Contains("Cube Staff"));
-                    }
-                    else if(hit.transform.name.Contains("Helmet"))
-                    {
-                        Player.AvailableItems.RemoveAll(x => x.name.Contains("Helmet"));
-                    }
-                    else
-                    {
-                        Player.AvailableItems.Remove(Player.AvailableItems.First(x => hit.transform.name.Contains(x.name)));
-                    }
+                    Player.AvailableItems.Remove(removeMatch);
                 }
-          
-
-                GameObject.Destroy(hit.gameObject);
             }
         }
+
+        Destroy(hit.gameObject);
+    }
+}
         else if (hit.transform.name.Contains("healthheart"))
         {
+            Debug.Log("准备触发 HandleHeartPickup");
             HandleHeartPickup(hit);
         }
         else if (hit.transform.name == "Key(Clone)")
@@ -286,25 +311,31 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-        private void HandleHeartPickup(ControllerColliderHit hit)
+    private void HandleHeartPickup(ControllerColliderHit hit)
     {
         if (!Player.AlreadyPickedUpCoins.Contains(hit.transform.GetInstanceID()))
         {
+            Player.AlreadyPickedUpCoins.Add(hit.transform.GetInstanceID());
+
             if (Player.Health < Player.MaxHealth)
             {
                 Player.Health += 1;
                 HeartScript.DrawHearts();
-                Player.AlreadyPickedUpCoins.Add(hit.transform.GetInstanceID());
-                Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/Gulp"), 2);
-                StartCoroutine(DestroyItLater(Instantiate(CoinPickup, hit.transform.position, Quaternion.identity), 3));
-                Destroy(hit.transform.gameObject);
             }
-            else { return; }
+            else
+            {
+                Debug.Log("Still pick up heart even if health is full.");
+            }
+
+            Player.Audio.PlayOneShot(Resources.Load<AudioClip>("Sounds/Player/Gulp"), 2);
+            StartCoroutine(DestroyItLater(Instantiate(CoinPickup, hit.transform.position, Quaternion.identity), 3));
+            Destroy(hit.transform.gameObject);
         }
     }
 
     private void HandleKeyPickup(ControllerColliderHit hit)
     {
+
         if (!Player.AlreadyPickedUpCoins.Contains(hit.transform.GetInstanceID()))
         {
             Player.AlreadyPickedUpCoins.Add(hit.transform.GetInstanceID());

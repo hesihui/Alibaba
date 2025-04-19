@@ -52,7 +52,7 @@ public static class Player
     public static float ShotSpeed = 0;
 
     public static float Health = 3f;
-    public static float MaxHealth = 3f;
+    public static float MaxHealth = 10f;
 
     public static GameObject Attack;
     public static GameObject AttackExplosion;
